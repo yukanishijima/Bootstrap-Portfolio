@@ -105,82 +105,62 @@ h1, h2, h3 {
 
 /* Header 
 ------------------------------------- */
+.my_header_container {
+  max-width: 768px;
+}
+@media screen and (min-width: 960px) {
+  .my_header_container {
+    max-width: 960px;
+  }
+}
 header ul {
   text-decoration: none;
-  margin-bottom: 0;
-  background-color: #ffffff;
-}
-header li {
-  display: inline-block;
 }
 header li a {
   color: #777777;
-  padding: 0 10px;
-  border-right: 1px solid #777777;
-}
-.erase {
-  border: none;
 }
 header h1 {
-  color: white;
   font-size: 25px;
-  margin: 0;
-}
-.my_header {
-  height: 70px;
-  border-bottom: 1px solid #cccccc;
 }
 
 /* Main 
 ------------------------------------- */
 main {
   background-image: url(../images/what-the-hex.png);
-  padding: 30px 0;
   /* for sticky footer */
   margin-bottom: 40px;
+  width: 100vw;
 }
-.main_wrap {
-  max-width: 960px;
+.my_wrap {
+  max-width: 768px;
+}
+@media screen and (min-width: 980px) {
+  .my_wrap {
+    max-width: 960px;
+  }
 }
 main section {
   max-width: 695px;
-  padding: 0px 30px 20px 30px;
-  background-color: #ffffff;
+  padding: 0px 20px 20px 20px;
 }
 main h2 {
   font-size: 25px;
   line-height: 90px;
   color: #4aaaa5;
-  border-bottom: 1px solid #dddddd;
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 980px) {
-  main section {
-  }
-}
-@media screen and (max-width: 768px) {
-  main section {
-    max-width: 90vw;
-  }
 }
 
 /* About
 ------------------------------------- */
 .about_image {
   float: left;
-  margin-right: 20px;
   object-fit: cover;
 }
 .about_p {
   line-height: 2em;
 }
-
 @media screen and (max-width: 640px) {
   .about_image {
     float: none;
-    margin-right: 0px;
-    margin-bottom: 20px;
     width: 100%;
     height: 300px;
   }
@@ -188,9 +168,31 @@ main h2 {
 
 /* Portfolio
 ------------------------------------- */
+.portfolio_container p {
+  position: absolute; 
+  bottom: 20px;
+
+  background-color: #4aaaa5;
+  color: white;
+  width: 100%;
+}
+.portfolio_container img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
 
 /* Contact
 ------------------------------------- */
+.my_btn {
+  background-color: #4aaaa5;
+  border-color: #4aaaa5;
+  border-radius: 0.25rem;
+}
+.my_btn:hover {
+  background-color: rgba(70, 135, 130, 1);
+  border-color: rgba(70, 135, 130, 1);
+}
 
 /* Footer
 ------------------------------------- */
@@ -202,5 +204,4 @@ footer {
 footer p {
   font-size: 12px;
   max-width: 960px;
-  margin: 0 auto;
 }

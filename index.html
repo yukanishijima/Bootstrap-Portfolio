@@ -14,21 +14,21 @@
 
 <body>
 
-<header>
-  <div class="container-fluid">
+<header class="mx-auto border-bottom">
+  <div class="container-fluid mx-auto my_header_container">
 
   <div class="row">
 
-    <div class="col-xs-12 col-md-6 bg-info">
-        <h1 class="mx-auto">Yuka Nishijima</h1>
+    <div class="col-sm-12 col-md-4 bg-info text-center text-md-left p-3">
+        <h1 class="text-center text-white m-0">Yuka Nishijima</h1>
     </div>
     
-    <div class="col-xs-12 col-md-6">
+    <div class="col-sm-12 col-md-8 text-center text-md-right p-3">
         <nav>
-          <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="erase">Contact</a></li>
+          <ul class="bg-white mb-0">
+            <li class="d-inline-block"><a class="px-3 border-right" href="index.html">About</a></li>
+            <li class="d-inline-block"><a class="px-3 border-right" href="portfolio.html">Portfolio</a></li>
+            <li class="d-inline-block"><a class="px-3" href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -38,21 +38,23 @@
   </div><!-- end of .container-->
 </header>
 
-<main>
-<div class="main_wrap">
+<main class="py-4 mb-5">
 
-  <section class="mx-auto">
+<div class="container-fluid p-md-0 mx-auto my_wrap">
+
+  <section class="bg-white">
+
   <div class="container">
 
     <div class="row">
-      <div class="col-xs-12">
-        <h2>About Me</h2>
+      <div class="col-12 p-0">
+        <h2 class="border-bottom mb-4">About Me</h2>
       </div>
     </div>
 
     <div class="row">
       <div class="col-xs-12">
-        <img src="assets/images/christal-yuen-57111-unsplash_300px.jpg" alt="dog" class="about_image img-fluid">
+        <img src="assets/images/christal-yuen-57111-unsplash_300px.jpg" alt="dog" class="about_image img-fluid mr-sm-3">
         <p class="about_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p class="about_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p class="about_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -60,13 +62,15 @@
     </div>
 
   </div><!-- end of .container-->
+
   </section>
   
-</div>
+</div><!-- end of .container-fluid-->
+
 </main>
 
 <footer class="fixed-bottom">
-  <p class="text-white text-center mb-0 p-2">Copyright &#169;</p>
+  <p class="text-white text-center mb-0 p-3 mx-auto">Copyright &#169;</p>
 </footer>
 
 </body>
